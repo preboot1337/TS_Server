@@ -17,9 +17,9 @@
             margin: 0;
             overflow: hidden;
             display: flex;
-            align-items: center;
+            align-items: flex-start; /* Align items to the top */
             justify-content: center;
-            height: 100vh;
+            min-height: 100vh; /* Changed height to min-height */
             background: linear-gradient(-45deg, #3498db, #ff0000);
             background-size: 400% 400%;
             animation: gradientAnimation 15s ease infinite;
@@ -42,11 +42,6 @@
             100% {
                 background-position: 0% 50%;
             }
-        }
-
-        .container {
-            position: relative;
-            text-align: center;
         }
 
         .logo {
@@ -93,9 +88,9 @@
         }
 
         .button {
-            display: inline-block;
+            display: block;
             padding: 10px 20px;
-            margin-top: 20px;
+            margin: 20px 0; /* Added margin for spacing between buttons */
             background-color: #00ff00; /* Green color for the button */
             color: #fff;
             text-decoration: none;
@@ -105,6 +100,11 @@
 
         .button:hover {
             background-color: #008000; /* Darker green color on hover */
+        }
+
+        .button-caption {
+            font-size: 0.8em;
+            color: #fff;
         }
 
         @media only screen and (min-width: 600px) {
@@ -137,11 +137,61 @@
     </style>
 </head>
 <body>
-   
-                <li><p>by. preboot1337</p></li>
-            </ul>
-        </div>
-        <a href="apple-magnifier://install?url=https://preboot1337.github.io/TS_Server/ipa/GBoxTS.ipa" class="button">Open in TrollStore</a>
+    <img class="logo" src="frida.png" alt="Logo">
+    <p>iOS 14.0 - iOS 17 / A8 - A11</p>
+    <div class="changelog-box">
+        <h2>v2.0</h2>
+        <ul>
+            <li><p>TS Store</p></li>
+            <li><p>ts_store</p></li>
+        </ul>
     </div>
+    <a href="apple-magnifier://install?url=https://preboot1337.github.io/TS_Server/ipa/GBoxTS.ipa" class="button">Open in TrollStore</a>
+    
+    <!-- Additional buttons -->
+    <a href="https://example.com/button1" class="button">Button 1</a>
+    <p class="button-caption">Caption 1</p>
+    
+    <a href="https://example.com/button2" class="button">Button 2</a>
+    <p class="button-caption">Caption 2</p>
+
+    <a href="https://example.com/button3" class="button">Button 3</a>
+    <p class="button-caption">Caption 3</p>
+
+    <a href="https://example.com/button4" class="button">Button 4</a>
+    <p class="button-caption">Caption 4</p>
+
+    <a href="https://example.com/button5" class="button">Button 5</a>
+    <p class="button-caption">Caption 5</p>
+
+    <a href="https://example.com/button6" class="button">Button 6</a>
+    <p class="button-caption">Caption 6</p>
+
+    <a href="https://example.com/button7" class="button">Button 7</a>
+    <p class="button-caption">Caption 7</p>
+
+    <a href="https://example.com/button8" class="button">Button 8</a>
+    <p class="button-caption">Caption 8</p>
+
+    <a href="https://example.com/button9" class="button">Button 9</a>
+    <p class="button-caption">Caption 9</p>
+
+    <a href="https://example.com/button10" class="button">Button 10</a>
+    <p class="button-caption">Caption 10</p>
+
+    <a href="https://example.com/button11" class="button">Button 11</a>
+    <p class="button-caption">Caption 11</p>
+
+    <a href="https://example.com/button12" class="button">Button 12</a>
+    <p class="button-caption">Caption 12</p>
+
+    <a href="https://example.com/button13" class="button">Button 13</a>
+    <p class="button-caption">Caption 13</p>
+
+    <a href="https://example.com/button14" class="button">Button 14</a>
+    <p class="button-caption">Caption 14</p>
+
+    <a href="https://example.com/button15" class="button">Button 15</a>
+    <p class="button-caption">Caption 15</p>
 </body>
 </html>
