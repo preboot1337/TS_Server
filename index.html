@@ -87,11 +87,19 @@
             color: #333;
         }
 
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-y: auto;
+            max-height: calc(100vh - 300px); /* Adjusted max-height to allow space for other elements */
+        }
+
         .button {
             display: block;
             padding: 10px 20px;
-            margin: 20px 0; /* Added margin for spacing between buttons */
-            background-color: #00ff00; /* Green color for the button */
+            margin: 20px 0;
+            background-color: #00ff00;
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
@@ -99,7 +107,7 @@
         }
 
         .button:hover {
-            background-color: #008000; /* Darker green color on hover */
+            background-color: #008000;
         }
 
         .button-caption {
@@ -137,61 +145,58 @@
     </style>
 </head>
 <body>
-    <img class="logo" src="frida.png" alt="Logo">
-    <p>iOS 14.0 - iOS 17 / A8 - A11</p>
-    <div class="changelog-box">
-        <h2>v2.0</h2>
-        <ul>
             <li><p>TS Store</p></li>
             <li><p>ts_store</p></li>
         </ul>
     </div>
     <a href="apple-magnifier://install?url=https://preboot1337.github.io/TS_Server/ipa/GBoxTS.ipa" class="button">Open in TrollStore</a>
     
-    <!-- Additional buttons -->
-    <a href="https://example.com/button1" class="button">Button 1</a>
-    <p class="button-caption">Caption 1</p>
-    
-    <a href="https://example.com/button2" class="button">Button 2</a>
-    <p class="button-caption">Caption 2</p>
+    <!-- Button container with scrolling -->
+    <div class="button-container">
+        <a href="https://example.com/button1" class="button">Button 1</a>
+        <p class="button-caption">Caption 1</p>
+        
+        <a href="https://example.com/button2" class="button">Button 2</a>
+        <p class="button-caption">Caption 2</p>
 
-    <a href="https://example.com/button3" class="button">Button 3</a>
-    <p class="button-caption">Caption 3</p>
+        <a href="https://example.com/button3" class="button">Button 3</a>
+        <p class="button-caption">Caption 3</p>
 
-    <a href="https://example.com/button4" class="button">Button 4</a>
-    <p class="button-caption">Caption 4</p>
+        <a href="https://example.com/button4" class="button">Button 4</a>
+        <p class="button-caption">Caption 4</p>
 
-    <a href="https://example.com/button5" class="button">Button 5</a>
-    <p class="button-caption">Caption 5</p>
+        <a href="https://example.com/button5" class="button">Button 5</a>
+        <p class="button-caption">Caption 5</p>
 
-    <a href="https://example.com/button6" class="button">Button 6</a>
-    <p class="button-caption">Caption 6</p>
+        <a href="https://example.com/button6" class="button">Button 6</a>
+        <p class="button-caption">Caption 6</p>
 
-    <a href="https://example.com/button7" class="button">Button 7</a>
-    <p class="button-caption">Caption 7</p>
+        <a href="https://example.com/button7" class="button">Button 7</a>
+        <p class="button-caption">Caption 7</p>
 
-    <a href="https://example.com/button8" class="button">Button 8</a>
-    <p class="button-caption">Caption 8</p>
+        <a href="https://example.com/button8" class="button">Button 8</a>
+        <p class="button-caption">Caption 8</p>
 
-    <a href="https://example.com/button9" class="button">Button 9</a>
-    <p class="button-caption">Caption 9</p>
+        <a href="https://example.com/button9" class="button">Button 9</a>
+        <p class="button-caption">Caption 9</p>
 
-    <a href="https://example.com/button10" class="button">Button 10</a>
-    <p class="button-caption">Caption 10</p>
+        <a href="https://example.com/button10" class="button">Button 10</a>
+        <p class="button-caption">Caption 10</p>
 
-    <a href="https://example.com/button11" class="button">Button 11</a>
-    <p class="button-caption">Caption 11</p>
+        <a href="https://example.com/button11" class="button">Button 11</a>
+        <p class="button-caption">Caption 11</p>
 
-    <a href="https://example.com/button12" class="button">Button 12</a>
-    <p class="button-caption">Caption 12</p>
+        <a href="https://example.com/button12" class="button">Button 12</a>
+        <p class="button-caption">Caption 12</p>
 
-    <a href="https://example.com/button13" class="button">Button 13</a>
-    <p class="button-caption">Caption 13</p>
+        <a href="https://example.com/button13" class="button">Button 13</a>
+        <p class="button-caption">Caption 13</p>
 
-    <a href="https://example.com/button14" class="button">Button 14</a>
-    <p class="button-caption">Caption 14</p>
+        <a href="https://example.com/button14" class="button">Button 14</a>
+        <p class="button-caption">Caption 14</p>
 
-    <a href="https://example.com/button15" class="button">Button 15</a>
-    <p class="button-caption">Caption 15</p>
+        <a href="https://example.com/button15" class="button">Button 15</a>
+        <p class="button-caption">Caption 15</p>
+    </div>
 </body>
 </html>
